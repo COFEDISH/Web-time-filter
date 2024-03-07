@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обработка Тикетов</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Обработка Журнала Тикетов</h1>
+    <form action="/results" method="post">
+        <textarea name="logData" rows="10" cols="50" placeholder="Вставьте текст журнала здесь..."></textarea><br>
+        <label for="timeThreshold">Выберите время в минутах:</label>
+        <input type="number" name="timeThreshold" min="1"><br>
+        <input type="submit" value="Вперёд">
+    </form>
+</body>
+</html>

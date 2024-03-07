@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты Обработки</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Результаты Обработки</h1>
+    <table>
+        <tr>
+            <th>URL</th>
+            <th>Время Обработки (минуты)</th>
+        </tr>
+        {% for url, time_diff in results %}
+        <tr>
+            <td>{{ url }}</td>
+            <td>{{ time_diff }} мин</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
